@@ -1,0 +1,993 @@
+Start syslog and klog
+Start Server : inetd
+PRESS CRTL-C TO STOP BOOT SEQUENCE
+PBA Equipment Controller 1830PSS-4 EC side
+Wait disk
+.break
+Boot with bootCfg information
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on hda3, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+SystemPartition is not present in EC_TO_BE_ACTIVATED
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on hda1, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+Partition /dev/hda1 mounted
+kload /mnt/hda1/boot/LINUX_FLC_LINK ...
+Write to memory done
+set active status
+In ACTIVE STATUS!
+shutdown: sending aIoctl start 
+Starting new kernel
+md: stopping all md devices.
+md: md0 switched to read-only mode.
+Bye!
+
+loaded at:     00200000 00467120
+relocated to:  00800000 00A67120
+board data at: 00A66F90 00A66FD4
+relocated to:  008050B4 008050F8
+zimage at:     0080586D 0097485F
+initrd at:     00975000 00A63AB9
+avail ram:     00A68000 3FC00000
+
+Linux/PPC load: console=ttyS0,38400 root=/dev/ram rw init=linuxrc
+Uncompressing Linux...done.
+Now booting the kernel
+Linux version 2.6.10_mvlcge401-pss4[ALCATEL-PLAT-LINUX-V2.0.12] (bldcn@pss233-lx.mh.lucent.com) (gcc versio
+n 3.4.3 (MontaVista 3.4.3-25.0.154.0900784 2009-04-19)) #4 Wed Jun 22 13:06:47 EDT 2011
+RMON: rmon_first_init
+Built 1 zonelists
+Kernel command line: console=ttyS0,38400 root=/dev/ram rw init=linuxrc
+IPIC (128 IRQ sources, 8 External IRQs) at fe000700
+PID hash table entries: 4096 (order: 12, 65536 bytes)
+hr_time_init: arch_to_nsec = 64000000, nsec_to_arch = 140737488
+Console: colour dummy device 80x25
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 1030308k available (2428k kernel code, 732k data, 192k init, 258048k highmem)
+RMON - kernel resource monitoring
+Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+spawn_desched_task(00000000)
+desched cpu_callback 3/00000000
+ksoftirqd started up.
+desched cpu_callback 2/00000000
+checking if image is initramfs...desched thread 0 started up.
+it isn't (no cpio magic); looks like an initrd
+Freeing initrd memory: 954k freed
+NET: Registered protocol family 16
+gpiolib_sysfs_init 609  ARCH_NR_GPIOS = 256 
+Generic PHY: Registered new driver
+highmem bounce pool size: 64 pages
+klog channel created (2097152 bytes)
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+Initializing Cryptographic API
+WDT driver for MPC83xx initialized. mode:reset timeout=65535 (16 seconds)
+flashrom dev number: fe00001
+strata flash init success.<6>Serial: 8250/16550 driver $Revision: 1.90 $ 4 ports, IRQ sharing disabled
+ttyS0 at MMIO 0xf0004500 (irq = 9) is a 16550A
+ttyS1 at MMIO 0xf0004600 (irq = 10) is a 16550A
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered
+RAMDISK driver initialized: 16 RAM disks of 65536K size 1024 blocksize
+loop: loaded (max 8 devices)
+gfar_mdio_probe: pdev->id=0, addr=0xf0024520
+Gianfar MII Bus: probed
+gianfar: r->start= 0xf0024000
+eth0: Gianfar Ethernet Controller Version 1.2, 08:00:3e:26:15:59 
+eth0: Running with NAPI disabled
+eth0: 64/64 RX/TX BD ring size
+gianfar: r->start= 0xf0025000
+eth1: Gianfar Ethernet Controller Version 1.2, 00:00:00:00:00:00 
+eth1: Running with NAPI disabled
+eth1: 64/64 RX/TX BD ring size
+HDLC support module revision 1.17
+i2c /dev entries driver
+DS1672 RTC Driver ...
+Uniform Multi-Platform E-IDE driver Revision: 7.00alpha2
+ide: Assuming 50MHz system bus speed for PIO modes; override with idebus=xx
+mpc83xx_gpio_probe : start gpio probe.
+mpc83xx_gpio_probe : start gpio probe.
+par_io_init : DIR[00800000] ODR[FF7FFFFF] DAT[DFF00000] DIR[DFF000BD] ODR[00000000] DAT[00000000] 
+par_io_init : gpio[0] = FE000C00 gpio[1] = FE000D00 
+md: raid1 personality registered for level 1
+md: faulty personality registered for level -5
+md: md driver 0.90.3 MAX_MD_DEVS=256, MD_SB_DISKS=27
+md: bitmap version 4.39
+CPLD information avalible
+AIR information available
+Active Standby information available
+Auto Reset information available
+Card ID: STEC M2P CF 1.0.0        M2P
+ Fixed Disk Card
+ IDE interface 
+ [silicon] [unique] [single] [sleep] [standby] [idle] [low power]
+hda: STEC M2P CF 1.0.0, CFA DISK drive
+elevator: using anticipatory as default io scheduler
+ide0 at 0xb1204800-0xb1204807,0xb120480e on irq 22
+hda: max request size: 128KiB
+hda: task_no_data_intr: status=0x51 { DriveReady SeekComplete Error }
+hda: task_no_data_intr: error=0x00 { }
+ide: failed opcode was: 0xf8
+hda: 4001760 sectors (2048 MB), CHS=3970/16/63
+ hda: hda1 hda2 hda3 hda4
+Registered cram driver
+NET: Registered protocol family 2
+IP: routing cache hash table of 8192 buckets, 64Kbytes
+TCP: Hash tables configured (established 262144 bind 65536)
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+pram=0x0, tx_bd=0x0 reg=0xfe007000
+spi_loop_probe : spi_get_instno = 0 
+register the dev pdev = 0x00000000 minor = 0 
+
+spi lanswitch probe.
+register the dev pdev = 0x00000000 minor = 2 
+spi_spider_init 842 ret = 0 
+kyra dev number: major = 153 minor = 1 g_spi_dev = 805710a0 
+register the dev pdev = 0x00000000 minor = 1 
+IP-Config: Incomplete network configuration information.
+md: Autodetecting RAID arrays.
+md: autorun ...
+md: ... autorun DONE.
+RAMDISK: Compressed image found at block 0
+VFS: Mounted root (ext2 filesystem).
+Freeing unused kernel memory: 192k init
+Build nodes
+Build mount points
+boot device is hda1
+Wait disk
+Create and Start md device
+mdadm: /dev/hda1 appears to contain an ext2fs file system
+    size=222080K  mtime=Thu Jan  1 00:00:12 1970
+mdadm: /dev/hda1 appears to be part of a raid array:
+    level=raid1 devices=2 ctime=Thu Jan  1 00:00:06 1970
+md: bind<hda1>
+md: md0: raid array is not clean -- starting background reconstruction
+raid1: raid set md0 active with 1 out of 2 mirrors
+mdadm: array /dev/md0 started.
+mount boot device : dev/md0
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on md0, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+pivot root
+INIT: version 2.85 booting
+Mounting a tmpfs over /dev...done.
+Creating initial device nodes...done.
+shelf from user:1
+Mounting readonly root filesystem...done. 
+Checking root file system...fsck 1.35 (28-Feb-2004)
+e2fsck 1.35 (28-Feb-2004)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure                                           
+Pass 3: Checking directory connectivity                                        
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/md0: 3702/55552 files (2.8% non-contiguous), 107184/222080 blocks         
+done. 
+Remounting root filesystem...EXT3 FS on md0, internal journal
+done. 
+ DEVROCKET BUG-FIX 
+Umount initrd
+umount: /initrd: device is busy
+
+[0] ES64-board
+
+[1] MATRIX-board - SPI_SLC_MEDIUM
+[2] SLC-small
+[3] PQ2_PNU
+[4] SPI_AGGREGATOR
+[5] SPI_LDC_SMALL
+[6] MATRIX-board -- 640
+[7] start arbitration spi (fork process)
+NOTE: 'export KS_KYRA_DEBUG=1' to enable the debug trace
+
+Select the board:__
+[0] Test and configuration menu
+[1] SPIDER-KYRA command menu
+[2] exit
+Insert the selection:__Insert the board-index for ks_spi_remapping_table (dec value):__Select your operatio
+n type [0]REMOTE [1]LOCAL :__
+   [0]  version read
+   [1]  serial-eeprom
+   [2]  I/O port
+   [3]  I/O port configuration
+   [4]  DSP-device                  --- NOT available
+   [5]  FOL -Force Output Low
+   [6]  FOH -Force Output High
+   [7]  dummy_register
+   [8]  internal_register (kyra LED management + JTAG management)
+
+   [9]  I2C protocol
+   [10] JTAG bridge                 --- NOT available
+   [11] Frequency management
+   [12] Timers management
+   [13] Compose a specific protocol
+   [14] menu test selection
+   [15] Read/Write BASTET
+   [16] SNAKE3T8 command extension
+   [17] Exit
+Select the object/operation:__Select the operation required [0]READ [1]WRITE:__Insert the INTERNAL-register
+ number [0-3]:__Insert the new INTERNAL-register (hexadecimal) value :__
+Operation LOCAL. Board index = 0057 (board_address = 39)
+ks_spi_INTERNAL_register function. Operation result = 0
+
+ INTERNAL-reg-00 = E400 ----1110010000000000  -- LED   management reserved  
+ INTERNAL-reg-01 = 0000 ----0000000000000000  -- JATG  management reserved  
+ INTERNAL-reg-02 = 0000 ----0000000000000000
+ INTERNAL-reg-03 = 0000 ----0000000000000000
+[0] Test and configuration menu
+[1] SPIDER-KYRA command menu
+[2] exit
+Insert the selection:__Calculating module dependencies
+Loading modules: 
+nls_base                        OK
+nls_utf8                        OK
+nls_iso8859_1                   OK
+nls_cp950                       OK
+nls_cp936                       OK
+nls_cp437                       OK
+nls_ascii                       OK
+vfat                    OK
+fat                     OK
+nls_base                        OK
+Build boot and spare device
+RAID1  start raid1 on local partitions
+mdadm: /dev/hda2 appears to contain an ext2fs file system
+    size=222144K  mtime=Thu Jan  1 00:01:53 1970
+mdadm: /dev/hda2 appears to be part of a raid array:
+    level=raid1 devices=2 ctime=Thu Jan  1 00:00:55 1970
+md: bind<hda2>
+md: md1: raid array is not clean -- starting background reconstruction
+raid1: raid set md1 active with 1 out of 2 mirrors
+mdadm: array /dev/md1 started.
+mdadm: /dev/hda3 appears to contain an ext2fs file system
+    size=1438336K  mtime=Thu Jan  1 00:00:12 1970
+mdadm: /dev/hda3 appears to be part of a raid array:
+    level=raid1 devices=2 ctime=Thu Jan  1 00:00:55 1970
+md: bind<hda3>
+md: md2: raid array is not clean -- starting background reconstruction
+raid1: raid set md2 active with 1 out of 2 mirrors
+mdadm: array /dev/md2 started.
+Checking all file systems: fsck
+fsck 1.35 (28-Feb-2004)
+e2fsck 1.35 (28-Feb-2004)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure                                           
+Pass 3: Checking directory connectivity                                        
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/md2: 6687/179872 files (1.7% non-contiguous), 143751/359584 blocks        
+e2fsck 1.35 (28-Feb-2004)
+Superblock last mount time is in the future.  Fix? yes
+
+Superblock last write time is in the future.  Fix? yes
+
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure                                           
+Pass 3: Checking directory connectivity                                        
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+                                                                               
+/dev/md1: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/md1: 3736/55552 files (2.9% non-contiguous), 102025/222144 blocks
+Setting kernel variables: sysctlkernel.panic = 5
+net.ipv4.ip_forward = 1
+. 
+Mounting local filesystems: mount kjournald starting.  Commit interval 5 seconds
+EXT3 FS on md2, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+/dev/md/2 on /pureNeApp type ext3 (rw,noatime,errors=remount-ro)
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on md1, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+/dev/md/1 on /linuxS type ext3 (rw,noatime,errors=remount-ro)
+Starting mounting swap: swapon. 
+Cleaning: /tmp /var/lock /var/run done.
+Setting up networking (ifupdown) ..Cleaning: /etc/network/run/ifstatedone.
+Starting watchdog daemon: watchdog.
+Setting hostname: hostnameSetting host name to `PSS4-81-1'
+Setting the System Clock using the Hardware Clock as reference...System Clock set. Local time: Thu Jan  1 0
+0:52:30 UTC 1970
+Setting up IP spoofing protection: rp_filter done.
+Disabling TCP/IP SYN cookies: done.
+Enabling IPv4 packet forwarding: done.
+Disabling IPv6 packet forwarding: done.
+Disabling TCP/IP Explicit Congestion Notification: done.
+Starting network interfaces: /etc/network/mac-address.sh: line 3: /pureNeApp/FLC/PLATFORM/etc/ip_address: N
+o such file or directory
+Failed to bring up eth0.
+/etc/network/mac-address.sh: line 3: /pureNeApp/FLC/PLATFORM/etc/ip_address: No such file or directory
+Failed to bring up eth1.
+done.
+Starting hotplug subsystem:
+   usb     
+   usb      [success]
+   ide     
+   ide      [success]
+   input   
+   input    [success]
+   scsi    
+   scsi     [success]
+done.
+Starting portmap daemon: portmap. 
+Calculating module dependencies
+Loading modules: 
+IPv4 over CLNP tunneling driver
+
+IPv6: add_dev failed for ipt0
+ipt-drv                 OK
+vlan_mang_init_module: rmon_create_basic_monitor succeed
+vlan_mang_init_module: rmon_create_instance succeed
+vlan_mang_init_module: DVLAN rmon_create_basic_monitor succeed
+vlan_mang_init_module: DVLAN rmon_create_instance succeed
+vlan_mang_init_module:  myShelf=129 mySlot=1
+vlan commands installed
+VLanManager module loaded.
+vlan_man_dev_mshelf_ho                  OK
+CSLIP: code copyright 1989 Regents of the University of California
+PPP generic driver version 2.4.2
+ppp_generic                     OK
+slhc                    OK
+NET: Registered protocol family 24
+pppox                   OK
+PPP over X version1.6
+cplab_pppoverx                  OK
+IPv6: add_dev failed for ethx
+X over Ethernet version1.2
+cplab_xovereth                  OK
+Init BroadCom ...
+done.
+Setting pseudo-terminal access permissions...done.
+Updating /etc/motd...done.
+Initializing random number generator...: done. 
+Recovering nvi editor sessions...: done.
+INIT: Entering runlevel: 3
+START cramdisk Sec. 3160
+Check cold ram disk filesystem :e2fsck 1.35 (28-Feb-2004)
+fsck.ext2: No such file or directory while trying to open /dev/bram
+
+The superblock could not be read or does not describe a correct ext2
+filesystem.  If the device is valid and it really contains an ext2
+filesystem (and not swap or ufs or something else), then the superblock
+is corrupt, and you might try running e2fsck with an alternate superblock:
+    e2fsck -b 8193 <device>
+
+filesytem corrupted or power-on board
+    Format cold ram disk: mke2fs 1.35 (28-Feb-2004)
+Could not stat /dev/bram --- No such file or directory
+
+The device apparently does not exist; did you specify it correctly?
+fail
+mknod: `/var/log/syslog-pipe': File exists
+Starting system log daemon: syslogd klogd.
+Write finished.
+0xF0024500:  -------- 00007105 40605060 00A1F037    ................
+   
+START vlanconf-pss4 Sec. 3161
+Start VLAN configuration
+    SLOT:0x1 FULL-SHELF:81 LOGICAL-SHELF:0x1 STATUS:1
+Configure eth0.4 with 100.1.81.1
+Added VLAN with VID == 4 to IF -:eth0:-
+Configure eth0. with 100.2.81.1
+Added VLAN with VID == 68 to IF -:eth0:-
+ Configuring EC for Slot 1 
+Configure eth0.132
+Added VLAN with VID == 132 to IF -:eth0:-
+Configure eth0.196
+Added VLAN with VID == 196 to IF -:eth0:-
+Configure eth0.516
+Added VLAN with VID == 516 to IF -:eth0:-
+Configure eth0.580
+Added VLAN with VID == 580 to IF -:eth0:-
+Configure eth0.258
+Added VLAN with VID == 258 to IF -:eth0:-
+Configure cit
+Configure eth0.3000
+Added VLAN with VID == 3000 to IF -:eth0:-
+Configure oamp
+Configure ilan with 100.0.81.1
+Starting NFS common utilities: statd lockd. 
+Starting internet superserver: inetd.
+Exporting directories for NFS kernel daemon...done. 
+Starting NFS kernel daemon:rpc.nfsd. 
+rpc.mountddone.
+Starting OpenBSD Secure Shell server: sshd. 
+Starting NTP server: ntpd.
+START loadlinx Sec. 3172
+/etc/rc.d/rc3.d/S33loadlinx.sh: Loading drivers from /pureNeApp/linx
+linx: no version for "struct_module" found: kernel tainted.
+LINX: version 2.0.4
+LINX: Compile-time configuration:
+LINX: Max number of LINX sockets 4096
+LINX: Max number of attach references 8192
+LINX: Socket send and receive queue size 1073741824
+LINX: Max number of remote links 850
+LINX: Max number of communicating sockets over a link 1024
+LINX: Max number of timeout references 2048
+LINX: LINK_PROTOCOL 0x9999
+NET: Registered protocol family 29
+LDCONFIG: update the ld.so.cache
+mknod: `/dev/lab': F export_store 358 
+ile exists
+ export_store 358 
+Starting DHCP server: dhcpd.
+Starting periodic command scheduler: cron. 
+START start_appl-1830isc Sec. 3194
+Start Application script
+Press enter key to stop application from running within 5 second
+EC Application screen startup script
+Force filesystem check at next boot
+# View:bldcn-pss4-1.2.1-110319-loadbuild-110320104709 Product:pss4 Build:1.2.1-110319
+# Packaged: Tue Mar 22 02:04:03 EDT 2011
+startapp2 started on the console /pureNeApp/EC/screen version
+waiting 10 seconds to attach to console....
+++ printf %02x 1
++ SLOT_2X=01
++ SHELF_TYPE=140
++ echo SHELF=1 SHELF_2D=01 SHELF_2X=1
+SHELF=1 SHELF_2D=01 SHELF_2X=1
++ /usr/bin/logger -t startapp2 'SHELF=1 SHELF_2D=01 SHELF_2X=1'
++ echo SLOT=1 SLOT_2D=01 SLOT_2X=01
+SLOT=1 SLOT_2D=01 SLOT_2X=01
++ /usr/bin/logger -t startapp2 'SLOT=1 SLOT_2D=01 SLOT_2X=01'
++ echo SHELF_TYPE=140
+SHELF_TYPE=140
++ /usr/bin/logger -t startapp2 SHELF_TYPE=140
++ /pureNeApp/EC/make_linx_conf
+LINX_NAME=LETH_010101
++ linxadvertise
++ echo 'LINX is using static links'
+LINX is using static links
++ /usr/bin/logger -t startapp2 'LINX is using static links'
++ /pureNeApp/EC/create_linx_links
+running: /pureNeApp/EC/create_linx_links, SHELF 1, SLOT 1
+createLinxConnections '1', '1 2 3 4 5 6 7 8 9 10'
+createLinxConnections '2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24', '1 2 3 4 5 6 7 8 9 10
+'
++ NOAUTORUN=/pureNeApp/noautorun
++ NOAUTOREBOOT=/pureNeApp/noautoreboot
++ REBOOT_DELAY=30
++ export MACHSHELF=1
++ MACHSHELF=1
++ export MACHSLOT=1
++ MACHSLOT=1
++ export MACHCARDTYPE=81
++ MACHCARDTYPE=81
++ '[' 0x36 = 0x36 -a 0x8C = 0x8C ']'
++ export MACHCARDTYPE=150
++ MACHCARDTYPE=150
++ export MACHBACKPLANEID=140
++ MACHBACKPLANEID=140
+++ cat /pureNeApp/EC/product
++ export PRODUCT=pss4
++ PRODUCT=pss4
++ export MASTERSLOTA=1
++ MASTERSLOTA=1
++ export MASTERSLOTB=18
++ MASTERSLOTB=18
++ '[' 1 -ne 1 ']'
++ export LOCALSLOTA=1
++ LOCALSLOTA=1
++ export LOCALSLOTB=18
++ LOCALSLOTB=18
++ export LOCALREDSLOTA=1
++ LOCALREDSLOTA=1
++ export LOCALREDSLOTB=18
++ LOCALREDSLOTB=18
++ export LOCALMTXSLOTA=1
++ LOCALMTXSLOTA=1
++ export LOCALMTXSLOTB=18
++ LOCALMTXSLOTB=18
++ echo 'startapp2:setting env for PSS shelf:'
+startapp2:setting env for PSS shelf:
++ echo 'startapp2:MSA=1, MSB=18'
+startapp2:MSA=1, MSB=18
++ echo 'startapp2:LSA=1, LSB=18'
+startapp2:LSA=1, LSB=18
++ echo 'startapp2:LRSA=1, LRSB=18'
+startapp2:LRSA=1, LRSB=18
++ echo 'startapp2:LMTXSA=1, LMTXSB=18'
+startapp2:LMTXSA=1, LMTXSB=18
++ /usr/bin/logger -t startapp2 'MSA=1, MSB=18'
++ /usr/bin/logger -t startapp2 'LSA=1, LSB=18'
++ /usr/bin/logger -t startapp2 'LRSA=1, LRSB=18'
++ /usr/bin/logger -t startapp2 'LMTXSA=1, LMTXSB=18'
++ '[' 1 -eq 1 ']'
++ CONFIG_FILE=/pureNeApp/EC/EC_main.pcfg
++ CONFIG_TDM=/export/home/application/process/STARTUP/profile_TDM
++ test -f /export/home/application/process/STARTUP/profile_TDM
++ CONFIG_CSSERVER=/export/home/application/process/STARTUP/profile_CSServer
++ test -f /export/home/application/process/STARTUP/profile_CSServer
++ '[' -f /pureNeApp/noautorun -a 0 == 0 ']'
++ /usr/bin/logger -t startapp2 'ProcessConfig STARTED'
++ /pureNeApp/EC/ProcessConfig --configfile /pureNeApp/EC/EC_main.pcfg --debug
+00:53:39.094401:src/Processes.cc:858 enterStartProcesses() about to start processes
+00:53:39.107056:zebra: Exec failed with No such file or directory
+00:53:39.108061:test/ProcessConfig/src/ProcessConfig.cc:116 handleTerm() PROCESS CONFIG cleanup code, sig=6
+00:53:39.108757:test/ProcessConfig/src/ProcessConfig.cc:60 killGroup() PROCESS CONFIG cleanup code
+00:53:39.109740:test/ProcessConfig/src/ProcessConfig.cc:116 handleTerm() PROCESS CONFIG cleanup code, sig=1
+5
+00:53:39.110519:test/ProcessConfig/src/ProcessConfig.cc:60 killGroup() PROCESS CONFIG cleanup code
+00:53:39.111306:test/ProcessConfig/src/ProcessConfig.cc:80 delay 3 seconds
+00:53:39.111915:test/ProcessConfig/src/ProcessConfig.cc:80 delay 3 seconds
+00:53:42.131666:test/ProcessConfig/src/ProcessConfig.cc:93 Rebooting the system
+00:53:42.131907:Cmn::shutdown
+00:53:42.132257:test/ProcessConfig/src/ProcessConfig.cc:93 Rebooting the system
+00:53:42.133274:Cmn::shutdown
+
+Broadcast message from root (pts/0) (Thu Jan  1 00:53:42 1970):
+
+The system is going down for reboot NOW!
+
+Broadcast message from root (pts/0) (Thu Jan  1 00:53:42 1970):
+
+The system is going down for reboot NOW!
+INIT: Sending processes the TERM signal
+Umount cold ram disk :umount: /dev/bram: not found
+fail
+Stopping periodic command scheduler: cron. 
+mknod: `/dev/lab': F export_store 358 
+ile exists
+ export_store 358 
+Stopping DHCP server: dhcpd.
+Stopping internet superserver: inetd.
+Stopping OpenBSD Secure Shell server: sshd. 
+Stopping NTP server: ntpd.
+Saving the System Clock time to the Hardware Clock...Hardware Clock updated to Thu Jan  1 00:53:47 UTC 1970
+.
+Saving random seed...: done. 
+Unexporting directories for NFS kernel daemon...done.
+Stopping NFS kernel daemon: rpc.mountd rpc.nfsddone.
+Unexporting directories for NFS kernel daemon...
+done.
+Stopping NFS common utilities: lockd statd. 
+Stopping portmap daemon: portmap. 
+Stopping hotplug subsystem:
+   usb     
+   usb      [success]
+   ide     
+   ide      [success]
+   input   
+   input    [success]
+   scsi    
+   scsi     [success]
+done.
+mknod: `/var/log/syslog-pipe': File exists
+Stopping system log daemon: klogd syslogd.
+Unmounting /dev...done.
+air_shelf has been init once.
+Sending all processes the TERM signal... Unexpected close, not stopping watchdog!
+
+[screen is terminating]
+linxadvertise: Got SIGTERM, exiting
+
+linxadvertise: atexit handler called. Closing connections
+
+done.
+Sending all processes the KILL signal... done.
+Unmounting remote filesystems... done. 
+Deactivating virtual file system...done.
+Unmounting local filesystems...umount: /dev/root busy - remounted read-only
+done.
+Starting reboot command: reboot
+Rebooting...
+md: stopping all md devices.
+md: md2 switched to read-only mode.
+md: md1 switched to read-only mode.
+md: md0 still in use.
+Restarting system.
+
+
+
+
+  *** Starting CP&C Genesis for Alcatel-Lucent PQ2Pro based core system ***
+
+CPU:   e300c1, MPC8347_TBGA_A, Rev: 3.0 at 396 MHz, CSB: 132 MHz
+Board Type: Alcatel-Lucent 1830 PSS-4 control board
+GENESIS: Starting memory independent stage for Hardware debug, press '.' to stop ...
+GENESIS: Exit from memory independent stage, continue booting sequence.
+
+DRAM:  1024 MB (DDR2, 64-bit, ECC off, 264 MHz)
+GENESIS: Starting full function stage, press 'Z' to stop ...
+GENESIS: Exit from full function stage, start loading L-BOOT.
+
+Try to find a valid active image.
+Failed to find a valid active image, try to find a valid standby image.
+Verify from ff900000 to ffd4ffff
+Standby Boot Table 0 selected
+
+
+ --------- Boot Table Status --------- 
+  entry index: 0 
+  version: 1 
+  status: standby
+  check flag: 1
+  start addr: ff900000
+  size: 450000
+
+Starting image...
+
+loaded at:     FF900000 FFCEB120
+relocated to:  00800000 00BEB120
+board data at: 00BEAF90 00BEAFD4
+relocated to:  008050B4 008050F8
+zimage at:     0080586D 00950BFF
+initrd at:     00951000 00BE7085
+avail ram:     00BEC000 3FC00000
+
+Linux/PPC load: console=ttyS0,38400 root=/dev/ram rw init=linuxrc
+Uncompressing Linux...done.
+Now booting the kernel
+Linux version 2.6.10_mvlcge401-pss4[ALCATEL-PLAT-LINUX-V2.0.1] (xusheng@plat4g-1) (gcc version 3.4.3 (Monta
+Vista 3.4.3-25.0.154.0900784 2009-04-19)) #10 Mon May 31 19:00:54 CST 2010
+Built 1 zonelists
+Kernel command line: console=ttyS0,38400 root=/dev/ram rw init=linuxrc
+IPIC (128 IRQ sources, 8 External IRQs) at fe000700
+PID hash table entries: 4096 (order: 12, 65536 bytes)
+hr_time_init: arch_to_nsec = 63072240, nsec_to_arch = 142807662
+Console: colour dummy device 80x25
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 1028900k available (2160k kernel code, 664k data, 184k init, 258048k highmem)
+Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+spawn_desched_task(00000000)
+desched cpu_callback 3/00000000
+ksoftirqd started up.
+desched cpu_callback 2/00000000
+checking if image is initramfs...desched thread 0 started up.
+it isn't (no cpio magic); looks like an initrd
+Freeing initrd memory: 2648k freed
+NET: Registered protocol family 16
+Generic PHY: Registered new driver
+highmem bounce pool size: 64 pages
+klog channel created (2097152 bytes)
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+Initializing Cryptographic API
+WDT driver for MPC83xx initialized. mode:reset timeout=65535 (16 seconds)
+flashrom dev number: fe00001
+strata flash init success.<6>Serial: 8250/16550 driver $Revision: 1.90 $ 4 ports, IRQ sharing disabled
+ttyS0 at MMIO 0xf0004500 (irq = 9) is a 16550A
+ttyS1 at MMIO 0xf0004600 (irq = 10) is a 16550A
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered
+RAMDISK driver initialized: 16 RAM disks of 65536K size 1024 blocksize
+loop: loaded (max 8 devices)
+gfar_mdio_probe: pdev->id=0, addr=0xf0024520
+Gianfar MII Bus: probed
+gianfar: r->start= 0xf0024000
+eth0: Gianfar Ethernet Controller Version 1.2, 08:00:3e:26:15:59 
+eth0: Running with NAPI disabled
+eth0: 64/64 RX/TX BD ring size
+gianfar: r->start= 0xf0025000
+eth1: Gianfar Ethernet Controller Version 1.2, 00:00:00:00:00:00 
+eth1: Running with NAPI disabled
+eth1: 64/64 RX/TX BD ring size
+PPP generic driver version 2.4.2
+HDLC support module revision 1.17
+Uniform Multi-Platform E-IDE driver Revision: 7.00alpha2
+ide: Assuming 50MHz system bus speed for PIO modes; override with idebus=xx
+md: raid1 personality registered for level 1
+md: faulty personality registered for level -5
+md: md driver 0.90.3 MAX_MD_DEVS=256, MD_SB_DISKS=27
+md: bitmap version 4.39
+CPLD information avalible
+AIR information available
+Active Standby information available
+Auto Reset information available
+Card ID: STEC M2P CF 1.0.0        M2P
+ Fixed Disk Card
+ IDE interface 
+ [silicon] [unique] [single] [sleep] [standby] [idle] [low power]
+hda: STEC M2P CF 1.0.0, CFA DISK drive
+elevator: using anticipatory as default io scheduler
+ide0 at 0xb1204800-0xb1204807,0xb120480e on irq 22
+hda: max request size: 128KiB
+hda: task_no_data_intr: status=0x51 { DriveReady SeekComplete Error }
+hda: task_no_data_intr: error=0x73 { UncorrectableError SectorIdNotFound TrackZeroNotFound AddrMarkNotFound
+ }, LBAsect=0, sector=0
+ide: failed opcode was: 0xf8
+hda: 4001760 sectors (2048 MB), CHS=3970/16/63
+ hda: hda1 hda2 hda3 hda4
+Registered cram driver
+VLanManager module loaded: ver 1.0
+Registered gpio driver
+mpc83xx_gpio_probe : start gpio probe.
+init_gpio_port : clear all gpio port!
+mpc83xx_gpio_probe : start gpio probe.
+NET: Registered protocol family 2
+IP: routing cache hash table of 8192 buckets, 64Kbytes
+TCP: Hash tables configured (established 262144 bind 65536)
+NET: Registered protocol family 1
+NET: Registered protocol family 17
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+Error slot no.
+IP-Config: Failed to open q
+IP-Config: Incomplete network configuration information.
+md: Autodetecting RAID arrays.
+md: autorun ...
+md: ... autorun DONE.
+RAMDISK: Compressed image found at block 0
+VFS: Mounted root (ext2 filesystem).
+Freeing unused kernel memory: 184k init
+
+Start syslog and klog
+Start Server : inetd
+PRESS CRTL-C TO STOP BOOT SEQUENCE
+PBA Equipment Controller 1830PSS-4 EC side
+Wait disk
+.break
+Boot with bootCfg information
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on hda3, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+SystemPartition is not present in EC_TO_BE_ACTIVATED
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on hda1, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+Partition /dev/hda1 mounted
+kload /mnt/hda1/boot/LINUX_FLC_LINK ...
+Write to memory done
+set active status
+In ACTIVE STATUS!
+shutdown: sending aIoctl start 
+Starting new kernel
+md: stopping all md devices.
+md: md0 switched to read-only mode.
+Bye!
+
+loaded at:     00200000 00467120
+relocated to:  00800000 00A67120
+board data at: 00A66F90 00A66FD4
+relocated to:  008050B4 008050F8
+zimage at:     0080586D 0097485F
+initrd at:     00975000 00A63AB9
+avail ram:     00A68000 3FC00000
+
+Linux/PPC load: console=ttyS0,38400 root=/dev/ram rw init=linuxrc
+Uncompressing Linux...done.
+Now booting the kernel
+Linux version 2.6.10_mvlcge401-pss4[ALCATEL-PLAT-LINUX-V2.0.12] (bldcn@pss233-lx.mh.lucent.com) (gcc versio
+n 3.4.3 (MontaVista 3.4.3-25.0.154.0900784 2009-04-19)) #4 Wed Jun 22 13:06:47 EDT 2011
+RMON: rmon_first_init
+Built 1 zonelists
+Kernel command line: console=ttyS0,38400 root=/dev/ram rw init=linuxrc
+IPIC (128 IRQ sources, 8 External IRQs) at fe000700
+PID hash table entries: 4096 (order: 12, 65536 bytes)
+hr_time_init: arch_to_nsec = 64000000, nsec_to_arch = 140737488
+Console: colour dummy device 80x25
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 1030308k available (2428k kernel code, 732k data, 192k init, 258048k highmem)
+RMON - kernel resource monitoring
+Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+spawn_desched_task(00000000)
+desched cpu_callback 3/00000000
+ksoftirqd started up.
+desched cpu_callback 2/00000000
+checking if image is initramfs...desched thread 0 started up.
+it isn't (no cpio magic); looks like an initrd
+Freeing initrd memory: 954k freed
+NET: Registered protocol family 16
+gpiolib_sysfs_init 609  ARCH_NR_GPIOS = 256 
+Generic PHY: Registered new driver
+highmem bounce pool size: 64 pages
+klog channel created (2097152 bytes)
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+Initializing Cryptographic API
+WDT driver for MPC83xx initialized. mode:reset timeout=65535 (16 seconds)
+flashrom dev number: fe00001
+strata flash init success.<6>Serial: 8250/16550 driver $Revision: 1.90 $ 4 ports, IRQ sharing disabled
+ttyS0 at MMIO 0xf0004500 (irq = 9) is a 16550A
+ttyS1 at MMIO 0xf0004600 (irq = 10) is a 16550A
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered
+RAMDISK driver initialized: 16 RAM disks of 65536K size 1024 blocksize
+loop: loaded (max 8 devices)
+gfar_mdio_probe: pdev->id=0, addr=0xf0024520
+Gianfar MII Bus: probed
+gianfar: r->start= 0xf0024000
+eth0: Gianfar Ethernet Controller Version 1.2, 08:00:3e:26:15:59 
+eth0: Running with NAPI disabled
+eth0: 64/64 RX/TX BD ring size
+gianfar: r->start= 0xf0025000
+eth1: Gianfar Ethernet Controller Version 1.2, 00:00:00:00:00:00 
+eth1: Running with NAPI disabled
+eth1: 64/64 RX/TX BD ring size
+HDLC support module revision 1.17
+i2c /dev entries driver
+DS1672 RTC Driver ...
+Uniform Multi-Platform E-IDE driver Revision: 7.00alpha2
+ide: Assuming 50MHz system bus speed for PIO modes; override with idebus=xx
+mpc83xx_gpio_probe : start gpio probe.
+mpc83xx_gpio_probe : start gpio probe.
+par_io_init : DIR[00800000] ODR[FF7FFFFF] DAT[DFF00000] DIR[DFF000BF] ODR[00000000] DAT[00000000] 
+par_io_init : gpio[0] = FE000C00 gpio[1] = FE000D00 
+md: raid1 personality registered for level 1
+md: faulty personality registered for level -5
+md: md driver 0.90.3 MAX_MD_DEVS=256, MD_SB_DISKS=27
+md: bitmap version 4.39
+CPLD information avalible
+AIR information available
+Active Standby information available
+Auto Reset information available
+Card ID: STEC M2P CF 1.0.0        M2P
+ Fixed Disk Card
+ IDE interface 
+ [silicon] [unique] [single] [sleep] [standby] [idle] [low power]
+hda: STEC M2P CF 1.0.0, CFA DISK drive
+elevator: using anticipatory as default io scheduler
+ide0 at 0xb1204800-0xb1204807,0xb120480e on irq 22
+hda: max request size: 128KiB
+hda: task_no_data_intr: status=0x51 { DriveReady SeekComplete Error }
+hda: task_no_data_intr: error=0x00 { }
+ide: failed opcode was: 0xf8
+hda: 4001760 sectors (2048 MB), CHS=3970/16/63
+ hda: hda1 hda2 hda3 hda4
+Registered cram driver
+NET: Registered protocol family 2
+IP: routing cache hash table of 8192 buckets, 64Kbytes
+TCP: Hash tables configured (established 262144 bind 65536)
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+pram=0x0, tx_bd=0x0 reg=0xfe007000
+spi_loop_probe : spi_get_instno = 0 
+register the dev pdev = 0x00000000 minor = 0 
+
+spi lanswitch probe.
+register the dev pdev = 0x00000000 minor = 2 
+spi_spider_init 842 ret = 0 
+kyra dev number: major = 153 minor = 1 g_spi_dev = 805710a0 
+register the dev pdev = 0x00000000 minor = 1 
+IP-Config: Incomplete network configuration information.
+md: Autodetecting RAID arrays.
+md: autorun ...
+md: ... autorun DONE.
+RAMDISK: Compressed image found at block 0
+VFS: Mounted root (ext2 filesystem).
+Freeing unused kernel memory: 192k init
+Build nodes
+Build mount points
+boot device is hda1
+Wait disk
+Create and Start md device
+mdadm: /dev/hda1 appears to contain an ext2fs file system
+    size=222080K  mtime=Thu Jan  1 00:00:12 1970
+mdadm: /dev/hda1 appears to be part of a raid array:
+    level=raid1 devices=2 ctime=Thu Jan  1 00:00:06 1970
+md: bind<hda1>
+md: md0: raid array is not clean -- starting background reconstruction
+raid1: raid set md0 active with 1 out of 2 mirrors
+mdadm: array /dev/md0 started.
+mount boot device : dev/md0
+kjournald starting.  Commit interval 5 seconds
+EXT3 FS on md0, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+pivot root
+INIT: version 2.85 booting
+Mounting a tmpfs over /dev...done.
+Creating initial device nodes...done.
+shelf from user:1
+Mounting readonly root filesystem...done. 
+Checking root file system...fsck 1.35 (28-Feb-2004)
+e2fsck 1.35 (28-Feb-2004)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure                                           
+Pass 3: Checking directory connectivity                                        
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/md0: 3702/55552 files (2.8% non-contiguous), 107229/222080 blocks         
+done. 
+Remounting root filesystem...EXT3 FS on md0, internal journal
+done. 
+ DEVROCKET BUG-FIX 
+Umount initrd
+umount: /initrd: device is busy
+
+[0] ES64-board
+[1] MATRIX-board - SPI_SLC_MEDIUM
+[2] SLC-small
+[3] PQ2_PNU
+[4] SPI_AGGREGATOR
+[5] SPI_LDC_SMALL
+[6] MATRIX-board -- 640
+[7] start arbitration spi (fork process)
+NOTE: 'export KS_KYRA_DEBUG=1' to enable the debug trace
+
+Select the board:__
+[0] Test and configuration menu
+[1] SPIDER-KYRA command menu
+[2] exit
+Insert the selection:__Insert the board-index for ks_spi_remapping_table (dec value):__Select your operatio
+n type [0]REMOTE [1]LOCAL :__
+   [0]  version read
+   [1]  serial-eeprom
+   [2]  I/O port
+   [3]  I/O port configuration
+   [4]  DSP-device                  --- NOT available
+   [5]  FOL -Force Output Low
+   [6]  FOH -Force Output High
+   [7]  dummy_register
+   [8]  internal_register (kyra LED management + JTAG management)
+
+   [9]  I2C protocol
+   [10] JTAG bridge                 --- NOT available
+   [11] Frequency management
+   [12] Timers management
+   [13] Compose a specific protocol
+   [14] menu test selection
+   [15] Read/Write BASTET
+   [16] SNAKE3T8 command extension
+   [17] Exit
+Select the object/operation:__Select the operation required [0]READ [1]WRITE:__Insert the INTERNAL-register
+ number [0-3]:__Insert the new INTERNAL-register (hexadecimal) value :__
+Operation LOCAL. Board index = 0057 (board_address = 39)
+ks_spi_INTERNAL_register function. Operation result = 0
+
+ INTERNAL-reg-00 = E400 ----1110010000000000  -- LED   management reserved  
+ INTERNAL-reg-01 = 0000 ----0000000000000000  -- JATG  management reserved  
+ INTERNAL-reg-02 = 0000 ----0000000000000000
+ INTERNAL-reg-03 = 0000 ----0000000000000000
+[0] Test and configuration menu
+[1] SPIDER-KYRA command menu
+[2] exit
+Insert the selection:__Calculating module dependencies
+Loading modules: 
+nls_base                        OK
+nls_utf8                        OK
+nls_iso8859_1                   OK
+nls_cp950                       OK
+nls_cp936                       OK
+nls_cp437                       OK
+nls_ascii                       OK
+vfat                    OK
+fat                     OK
+nls_base                        OK
+Build boot and spare device
+RAID1  start raid1 on local partitions
+mdadm: /dev/hda2 appears to contain an ext2fs file system
+    size=222144K  mtime=Thu Jan  1 00:01:53 1970
+mdadm: /dev/hda2 appears to be part of a raid array:
+    level=raid1 devices=2 ctime=Thu Jan  1 00:00:55 1970
+md: bind<hda2>
+md: md1: raid array is not clean -- starting background reconstruction
+raid1: raid set md1 active with 1 out of 2 mirrors
+mdadm: array /dev/md1 started.
+mdadm: /dev/hda3 appears to contain an ext2fs file system
+    size=1438336K  mtime=Thu Jan  1 00:00:12 1970
+mdadm: /dev/hda3 appears to be part of a raid array:
+    level=raid1 devices=2 ctime=Thu Jan  1 00:00:55 1970
+md: bind<hda3>
+md: md2: raid array is not clean -- starting background reconstruction
+raid1: raid set md2 active with 1 out of 2 mirrors
+mdadm: array /dev/md2 started.
+Checking all file systems: fsck
+fsck 1.35 (28-Feb-2004)
+e2fsck 1.35 (28-Feb-2004)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure                                           
+Pass 3: Checking directory connectivity                                        
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information                                     
+/dev/md2: 6687/179872 files (1.7% non-contiguous), 143751/359584 blocks        
+e2fsck 1.35 (28-Feb-2004)
+Superblock last mount time is in the future.  Fix? yes
+
+Superblock last write time is in the future.  Fix? yes
+
+Pass 1: Checking inodes, blocks, and sizes
